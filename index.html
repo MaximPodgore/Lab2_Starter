@@ -67,13 +67,22 @@
         </details>
         <form>
             <fieldset>
-                <label for="notes"> Add your notes here</label>
-                <input type="text" id="notes" name="notes">
-                <label for="email"> Email</label>
-                <textarea id="email" name="email"> Input the email here</textarea>
+                <legend>Random user data colletion (manual cookie)</legend>
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Input the email here">
                 <br>
                 <label for="browser">Choose your browser from the list:</label>
                 <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
                 <br>
                 <label for="cars">Choose a car:</label>
                 <select name="cars" id="cars">
@@ -82,27 +91,29 @@
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
-
                 <br>
                 <label for="cars2">Choose another car:</label>
                 <select id="cars2">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
                 </select>
+                <br>
+                <label for="checkbox">Checkbox:</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <br>
+                <label for="radio1">Radio 1:</label>
+                <input type="radio" id="radio1" name="radio" value="radio1">
+                <br>
+                <label for="radio2">Radio 2:</label>
+                <input type="radio" id="radio2" name="radio" value="radio2">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
             </fieldset>
         </form>
-
         <button type="button">This doesn't do anything!</button>
-
-        <datalist id="browsers">
-            <option value="Edge">
-            <option value="Firefox">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
-        </datalist>
         <footer> &copy; 2024 Boring Trademark </footer>
     </main>
   </body>
